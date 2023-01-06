@@ -148,26 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="imgui.ini" />
-    <None Include="Scripts\3d_cubes.pix" />
-    <None Include="Scripts\3d_directional_light.pix" />
-    <None Include="Scripts\3d_lighting.pix" />
-    <None Include="Scripts\3d_pipeline.pix" />
-    <None Include="Scripts\3d_point_light.pix" />
-    <None Include="Scripts\3d_spot_light.pix" />
-    <None Include="Scripts\3d_texturing_cube.pix" />
-    <None Include="Scripts\3d_texturing_perspective.pix" />
-    <None Include="Scripts\3d_triangles.pix" />
-    <None Include="Scripts\clipping.pix" />
-    <None Include="Scripts\clipping2.pix" />
-    <None Include="Scripts\fillmode.pix" />
-    <None Include="Scripts\guile.pix" />
-    <None Include="Scripts\lines.pix" />
-    <None Include="Scripts\lines2.pix" />
-    <None Include="Scripts\quad.pix" />
-    <None Include="Scripts\quad2.pix" />
     <None Include="Scripts\test.pix" />
-    <None Include="Scripts\triangles.pix" />
-    <None Include="Scripts\triangles2.pix" />
     <None Include="xconfig.json" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +158,7 @@
     <ClCompile Include="CmdVarFloat.cpp" />
     <ClCompile Include="CommandDictionary.cpp" />
     <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="MathHelper.cpp" />
     <ClCompile Include="PixEditor.cpp" />
     <ClCompile Include="Rasterizer.cpp" />
     <ClCompile Include="ScriptParser.cpp" />
@@ -198,11 +180,14 @@
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandDictionary.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="MathHelper.h" />
     <ClInclude Include="PixEditor.h" />
     <ClInclude Include="Rasterizer.h" />
     <ClInclude Include="ScriptParser.h" />
     <ClInclude Include="TextEditor.h" />
     <ClInclude Include="VariableCache.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
     <ClInclude Include="Viewport.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
