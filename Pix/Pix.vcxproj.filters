@@ -87,6 +87,9 @@
     <ClCompile Include="CmdShowViewport.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextEditor.h">
@@ -166,6 +169,12 @@
     </ClInclude>
     <ClInclude Include="CmdShowViewport.h">
       <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
