@@ -28,6 +28,11 @@ PrimitivesManager* PrimitivesManager::Get()
 	return &sInstance;
 }
 
+void PrimitivesManager::SetCullMode(CullMode mode)
+{
+	mCullMode = mode;
+}
+
 bool PrimitivesManager::BeginDraw(Topology topology, bool applyTransform)
 {
 	mDrawBegin = true;
@@ -63,7 +68,6 @@ bool PrimitivesManager::EndDraw()
 		{
 			mVertexBuffer[i].pos = MathHelper::TransformCoord(mVertexBuffer[i].pos, matFinal);
 		}
-
 	}
 
 	switch (mTopology)
