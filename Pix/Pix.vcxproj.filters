@@ -21,6 +21,21 @@
     <None Include="Scripts\3d_pipeline.pix">
       <Filter>Scripts</Filter>
     </None>
+    <None Include="Scripts\3d_triangles.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_directional_light.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_lighting.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_point_light.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_spot_light.pix">
+      <Filter>Scripts</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -130,6 +145,30 @@
       <Filter>Commands</Filter>
     </ClCompile>
     <ClCompile Include="DepthBuffer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCullMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdEnableDepth.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LightManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLights.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdMaterial.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
   </ItemGroup>
@@ -255,6 +294,30 @@
       <Filter>Commands</Filter>
     </ClInclude>
     <ClInclude Include="DepthBuffer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCullMode.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdEnableDepth.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LightManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLights.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdMaterial.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
       <Filter>Graphics</Filter>
     </ClInclude>
   </ItemGroup>

@@ -21,6 +21,7 @@ class PrimitivesManager
 public:
 	static PrimitivesManager* Get();
 
+	void OnNewFrame();
 	void SetCullMode(CullMode mode);
 
 	bool BeginDraw(Topology topology, bool applyTransform = false);

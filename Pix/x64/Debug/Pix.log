@@ -1,2 +1,17 @@
-﻿  CmdSetResolution.cpp
+﻿  CmdLights.cpp
+  DirectionalLight.cpp
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(509,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(509,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(510,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(510,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  Graphics.cpp
+  Light.cpp
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(509,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(509,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(510,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(510,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  LightManager.cpp
+  PrimitivesManager.cpp
+  Generating Code...
+     Creating library C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\x64\Debug\Pix.lib and object C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\x64\Debug\Pix.exp
   Pix.vcxproj -> C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\x64\Debug\Pix.exe

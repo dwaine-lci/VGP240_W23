@@ -6,8 +6,12 @@
 #include "CmdSetColor.h"
 #include "CmdBeginDraw.h"
 #include "CmdEndDraw.h"
+#include "CmdEnableDepth.h"
+#include "CmdLights.h"
+#include "CmdMaterial.h"
 #include "CmdVertex.h"
 #include "CmdSetFillMode.h"
+#include "CmdSetCullMode.h"
 #include "CmdSetClipping.h"
 #include "CmdSetViewport.h"
 #include "CmdShowViewport.h"
@@ -38,6 +42,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetViewport>();
 	RegisterCommand<CmdShowViewport>();
 	RegisterCommand<CmdSetClipping>();
+	RegisterCommand<CmdEnableDepth>();
 
 	// Variable commands
 	RegisterCommand<CmdVarFloat>();
@@ -55,6 +60,19 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetCameraFar>();
 	RegisterCommand<CmdSetCameraFov>();
 
+	// Light Commands
+	RegisterCommand<CmdSetLightAmbient>();
+	RegisterCommand<CmdSetLightDiffuse>();
+	RegisterCommand<CmdSetLightSpecular>();
+	RegisterCommand<CmdAddDirectionalLight>();
+	RegisterCommand<CmdAddPointLight>();
+	RegisterCommand<CmdAddSpotLight>();
+
+	// Material Commands
+	RegisterCommand<CmdSetMaterialAmbient>();
+	RegisterCommand<CmdSetMaterialDiffuse>();
+	RegisterCommand<CmdSetMaterialSpecular>();
+
 	// Rasterization commands
 	RegisterCommand<CmdDrawPixel>();
 	RegisterCommand<CmdSetColor>();
@@ -64,6 +82,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdBeginDraw>();
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdVertex>();
+	RegisterCommand<CmdSetCullMode>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()
