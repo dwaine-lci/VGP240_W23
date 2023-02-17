@@ -26,6 +26,7 @@
 #include "CmdSetCameraNear.h"
 #include "CmdSetCameraFar.h"
 #include "CmdSetCameraFov.h"
+#include "CmdModel.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -83,6 +84,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdVertex>();
 	RegisterCommand<CmdSetCullMode>();
+	RegisterCommand<CmdModel>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()

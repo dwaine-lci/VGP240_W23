@@ -106,6 +106,7 @@ bool CmdAddSpotLight::Execute(const std::vector<std::string>& params)
 	float constant = 1.0f;
 	float linear = 0.0f;
 	float quadratic = 0.0f;
+	float angle = 0.0f;
 	float decay = 0.0f;
 	if (params.size() > 6)
 	{
@@ -121,9 +122,13 @@ bool CmdAddSpotLight::Execute(const std::vector<std::string>& params)
 	}
 	if (params.size() > 9)
 	{
-		decay = vc->GetFloat(params[9]);
+		angle = vc->GetFloat(params[9]);
+	}
+	if (params.size() > 10)
+	{
+		decay = vc->GetFloat(params[10]);
 	}
 
-	LightManager::Get()->AddSpotLight(position, direction, constant, linear, quadratic, decay);
+	LightManager::Get()->AddSpotLight(position, direction, constant, linear, quadratic, angle, decay);
 	return true;
 }
