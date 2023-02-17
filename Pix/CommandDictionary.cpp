@@ -11,6 +11,7 @@
 #include "CmdMaterial.h"
 #include "CmdVertex.h"
 #include "CmdSetFillMode.h"
+#include "CmdSetShadeMode.h"
 #include "CmdSetCullMode.h"
 #include "CmdSetClipping.h"
 #include "CmdSetViewport.h"
@@ -78,6 +79,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdDrawPixel>();
 	RegisterCommand<CmdSetColor>();
 	RegisterCommand<CmdSetFillMode>();
+	RegisterCommand<CmdSetShadeMode>();
 
 	// Primitives commands
 	RegisterCommand<CmdBeginDraw>();

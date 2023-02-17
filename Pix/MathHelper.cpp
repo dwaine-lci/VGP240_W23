@@ -67,11 +67,11 @@ Vector3 MathHelper::TransformCoord(const Vector3& v, const Matrix4& m)
 
 Vector3 MathHelper::TransformNormal(const Vector3& v, const Matrix4& m)
 {
-	return {
+	return Normalize({
 		(v.x * m._11) + (v.y * m._21) + (v.z * m._31),
 		(v.x * m._12) + (v.y * m._22) + (v.z * m._32),
 		(v.x * m._13) + (v.y * m._23) + (v.z * m._33)
-	};
+	});
 }
 
 float MathHelper::Determinant(const Matrix4& m)

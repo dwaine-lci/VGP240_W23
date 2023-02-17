@@ -1,9 +1,2 @@
-﻿  LightManager.cpp
-  SpotLight.cpp
-C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(509,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(509,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(510,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\X\Inc\XMath.h(510,24): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
-C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\Pix\SpotLight.h(22,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
+﻿  MathHelper.cpp
   Pix.vcxproj -> C:\Users\LCI_Vancouver-DWaine\source\repos\VGP240_W23\x64\Debug\Pix.exe

@@ -189,6 +189,9 @@
     <ClCompile Include="ModelCache.cpp">
       <Filter>Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="CmdSetShadeMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextEditor.h">
@@ -352,6 +355,9 @@
     </ClInclude>
     <ClInclude Include="ModelCache.h">
       <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetShadeMode.h">
+      <Filter>Commands</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

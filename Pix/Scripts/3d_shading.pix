@@ -47,7 +47,7 @@ EndDraw()
 PushTranslation($lPosX, $lPosY, $lPosZ)
 PushScaling(0.1, 0.1, 0.1)
 
-SetShading(gauroud)
+SetShading(flat)
 BeginDraw(triangle, true)
 Model(../Models/cube.obj)
 EndDraw()
@@ -63,5 +63,7 @@ PushScaling(0.5, 0.5, 0.5)
 
 SetShading(phong)
 BeginDraw(triangle, true)
-Model(../Models/torus_knot.obj)
+Model(../Models/snow_man.obj)
 EndDraw()
+
+
