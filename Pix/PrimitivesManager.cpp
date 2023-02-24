@@ -58,6 +58,11 @@ void PrimitivesManager::SetCullMode(CullMode mode)
 	mCullMode = mode;
 }
 
+void PrimitivesManager::SetCorrectUV(bool correct)
+{
+	mCorrectUV = correct;
+}
+
 bool PrimitivesManager::BeginDraw(Topology topology, bool applyTransform)
 {
 	mDrawBegin = true;
@@ -146,6 +151,17 @@ bool PrimitivesManager::EndDraw()
 						for (size_t v = 0; v < triangle.size(); ++v)
 						{
 							triangle[v].color *= LightManager::Get()->ComputeLightColor(triangle[v].pos, triangle[v].normal);
+						}
+					}
+
+					if (mCorrectUV && triangle[0].color.z < 0.0f)
+					{
+						for (auto& v : triangle)
+						{
+							Vector3 viewPos = MathHelper::TransformCoord(v.pos, matView);
+							v.color.x /= viewPos.z;
+							v.color.y /= viewPos.z;
+							v.color.w = 1.0f / viewPos.z;
 						}
 					}
 

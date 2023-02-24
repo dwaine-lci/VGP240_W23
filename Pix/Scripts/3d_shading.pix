@@ -8,11 +8,11 @@ EnableDepth(true)
 
 float $camX = 0, 0.01
 float $camY = 1.5, 0.01
-float $camZ = -2, 0.01
+float $camZ = 2, 0.01
 
 float $camDirX = 0, 0.01
 float $camDirY = -2, 0.01
-float $camDirZ = 5, 0.01
+float $camDirZ = -5, 0.01
 
 float $lPosX = 0, 0.01
 float $lPosY = 2.5, 0.01
@@ -65,5 +65,6 @@ SetShading(phong)
 BeginDraw(triangle, true)
 Model(../Models/snow_man.obj)
 EndDraw()
+
 
 

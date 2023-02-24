@@ -2,6 +2,7 @@
 
 #include "CmdDrawPixel.h"
 #include "CmdSetResolution.h"
+#include "CmdVarBool.h"
 #include "CmdVarFloat.h"
 #include "CmdSetColor.h"
 #include "CmdBeginDraw.h"
@@ -27,6 +28,9 @@
 #include "CmdSetCameraNear.h"
 #include "CmdSetCameraFar.h"
 #include "CmdSetCameraFov.h"
+#include "CmdSetTexture.h"
+#include "CmdSetAddressMode.h"
+#include "CmdSetCorrectUV.h"
 #include "CmdModel.h"
 
 CommandDictionary* CommandDictionary::Get()
@@ -47,6 +51,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdEnableDepth>();
 
 	// Variable commands
+	RegisterCommand<CmdVarBool>();
 	RegisterCommand<CmdVarFloat>();
 	RegisterCommand<CmdPushTranslation>();
 	RegisterCommand<CmdPushRotationX>();
@@ -80,12 +85,15 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetColor>();
 	RegisterCommand<CmdSetFillMode>();
 	RegisterCommand<CmdSetShadeMode>();
+	RegisterCommand<CmdSetTexture>();
+	RegisterCommand<CmdSetAddressMode>();
 
 	// Primitives commands
 	RegisterCommand<CmdBeginDraw>();
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdVertex>();
 	RegisterCommand<CmdSetCullMode>();
+	RegisterCommand<CmdSetCorrectUV>();
 	RegisterCommand<CmdModel>();
 }
 

@@ -122,7 +122,7 @@ bool CmdAddSpotLight::Execute(const std::vector<std::string>& params)
 	}
 	if (params.size() > 9)
 	{
-		angle = vc->GetFloat(params[9]);
+		angle = vc->GetFloat(params[9]) * 3.1416f / 180.0f;
 	}
 	if (params.size() > 10)
 	{
