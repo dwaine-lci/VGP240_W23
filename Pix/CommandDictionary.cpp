@@ -32,6 +32,7 @@
 #include "CmdSetAddressMode.h"
 #include "CmdSetCorrectUV.h"
 #include "CmdModel.h"
+#include "CmdSetUseFilter.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -87,6 +88,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetShadeMode>();
 	RegisterCommand<CmdSetTexture>();
 	RegisterCommand<CmdSetAddressMode>();
+	RegisterCommand<CmdSetUseFilter>();
 
 	// Primitives commands
 	RegisterCommand<CmdBeginDraw>();

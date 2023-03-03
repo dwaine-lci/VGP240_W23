@@ -24,8 +24,8 @@ SetCameraPosition($camX, $camY, $camZ)
 SetCameraDirection($camDirX, $camDirY, $camDirZ)
 
 //SetTexture(../Images/checker.bmp)
-SetTexture(../Images/sponge_bob.bmp)
-//SetTexture(../Images/crate.bmp)
+//SetTexture(../Images/sponge_bob.bmp)
+SetTexture(../Images/crate.bmp)
 //SetTexture(../Images/cat.bmp)
 
 PushTranslation(0, 0, 0)
@@ -38,13 +38,15 @@ SetAddressMode(wrap)
 
 BeginDraw(triangle, true)
 
-Vertex(-1, -1, 0, 0, 1, -1)
+Vertex(-1, -1, 0, 0, 3, -1)
 Vertex(-1, 1, 0, 0, 0, -1)
-Vertex(1, 1, 0, 1, 0, -1)
-Vertex(-1, -1, 0, 0, 1, -1)
-Vertex(1, 1, 0, 1, 0, -1)
-Vertex(1, -1, 0, 1, 1, -1)
+Vertex(1, 1, 0, 3, 0, -1)
+Vertex(-1, -1, 0, 0, 3, -1)
+Vertex(1, 1, 0, 3, 0, -1)
+Vertex(1, -1, 0, 3, 3, -1)
 
 EndDraw()
+
+
 
 

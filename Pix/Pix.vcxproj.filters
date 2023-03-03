@@ -213,6 +213,9 @@
     <ClCompile Include="CmdSetCorrectUV.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
+    <ClCompile Include="CmdSetUseFilter.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextEditor.h">
@@ -396,6 +399,9 @@
       <Filter>Commands</Filter>
     </ClInclude>
     <ClInclude Include="CmdSetCorrectUV.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetUseFilter.h">
       <Filter>Commands</Filter>
     </ClInclude>
   </ItemGroup>
