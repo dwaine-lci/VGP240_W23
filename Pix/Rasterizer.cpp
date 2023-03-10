@@ -2,6 +2,7 @@
 #include "DepthBuffer.h"
 #include "LightManager.h"
 #include "TextureCache.h"
+#include "PostProcessing.h"
 
 // draw a line where abs(m) > 0 and < 1
 void DrawLineLow(const Vertex& left, const Vertex& right)
@@ -71,7 +72,10 @@ ShadeMode Rasterizer::GetShadeMode()
 
 void Rasterizer::DrawPoint(int x, int y)
 {
-	X::DrawPixel(x, y, mColor);
+	if (!PostProcessing::Get()->DrawToRenderTarget(x, y, mColor))
+	{
+		X::DrawPixel(x, y, mColor);
+	}
 }
 
 void Rasterizer::DrawPoint(const Vertex& vertex)

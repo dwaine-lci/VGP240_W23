@@ -33,6 +33,9 @@
 #include "CmdSetCorrectUV.h"
 #include "CmdModel.h"
 #include "CmdSetUseFilter.h"
+#include "CmdSetPostProcessingEffect.h"
+#include "CmdBeginPostProcessingDraw.h"
+#include "CmdEndPostProcessingDraw.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -89,6 +92,9 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetTexture>();
 	RegisterCommand<CmdSetAddressMode>();
 	RegisterCommand<CmdSetUseFilter>();
+	RegisterCommand<CmdSetPostProcessingEffect>();
+	RegisterCommand<CmdBeginPostProcessingDraw>();
+	RegisterCommand<CmdEndPostProcessingDraw>();
 
 	// Primitives commands
 	RegisterCommand<CmdBeginDraw>();

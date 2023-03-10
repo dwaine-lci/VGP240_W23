@@ -152,8 +152,10 @@
     <None Include="Scripts\3d_lighting.pix" />
     <None Include="Scripts\3d_pipeline.pix" />
     <None Include="Scripts\3d_point_light.pix" />
+    <None Include="Scripts\3d_point_light_post_process.pix" />
     <None Include="Scripts\3d_shading.pix" />
     <None Include="Scripts\3d_spot_light.pix" />
+    <None Include="Scripts\3d_texturing_cube_post_process.pix" />
     <None Include="Scripts\3d_texturing_perspective.pix" />
     <None Include="Scripts\3d_triangles.pix" />
     <None Include="Scripts\clipping.pix" />
@@ -167,9 +169,11 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Clipper.cpp" />
     <ClCompile Include="CmdBeginDraw.cpp" />
+    <ClCompile Include="CmdBeginPostProcessingDraw.cpp" />
     <ClCompile Include="CmdDrawPixel.cpp" />
     <ClCompile Include="CmdEnableDepth.cpp" />
     <ClCompile Include="CmdEndDraw.cpp" />
+    <ClCompile Include="CmdEndPostProcessingDraw.cpp" />
     <ClCompile Include="CmdLights.cpp" />
     <ClCompile Include="CmdMaterial.cpp" />
     <ClCompile Include="CmdModel.cpp" />
@@ -190,6 +194,7 @@
     <ClCompile Include="CmdSetCorrectUV.cpp" />
     <ClCompile Include="CmdSetCullMode.cpp" />
     <ClCompile Include="CmdSetFillMode.cpp" />
+    <ClCompile Include="CmdSetPostProcessingEffect.cpp" />
     <ClCompile Include="CmdSetResolution.cpp" />
     <ClCompile Include="CmdSetShadeMode.cpp" />
     <ClCompile Include="CmdSetTexture.cpp" />
@@ -212,8 +217,10 @@
     <ClCompile Include="ModelCache.cpp" />
     <ClCompile Include="PixEditor.cpp" />
     <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="PostProcessing.cpp" />
     <ClCompile Include="PrimitivesManager.cpp" />
     <ClCompile Include="Rasterizer.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
     <ClCompile Include="ScriptParser.cpp" />
     <ClCompile Include="SpotLight.cpp" />
     <ClCompile Include="TextEditor.cpp" />
@@ -232,9 +239,11 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Clipper.h" />
     <ClInclude Include="CmdBeginDraw.h" />
+    <ClInclude Include="CmdBeginPostProcessingDraw.h" />
     <ClInclude Include="CmdDrawPixel.h" />
     <ClInclude Include="CmdEnableDepth.h" />
     <ClInclude Include="CmdEndDraw.h" />
+    <ClInclude Include="CmdEndPostProcessingDraw.h" />
     <ClInclude Include="CmdLights.h" />
     <ClInclude Include="CmdMaterial.h" />
     <ClInclude Include="CmdModel.h" />
@@ -255,6 +264,7 @@
     <ClInclude Include="CmdSetCorrectUV.h" />
     <ClInclude Include="CmdSetCullMode.h" />
     <ClInclude Include="CmdSetFillMode.h" />
+    <ClInclude Include="CmdSetPostProcessingEffect.h" />
     <ClInclude Include="CmdSetResolution.h" />
     <ClInclude Include="CmdSetShadeMode.h" />
     <ClInclude Include="CmdSetTexture.h" />
@@ -279,8 +289,10 @@
     <ClInclude Include="ModelCache.h" />
     <ClInclude Include="PixEditor.h" />
     <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PostProcessing.h" />
     <ClInclude Include="PrimitivesManager.h" />
     <ClInclude Include="Rasterizer.h" />
+    <ClInclude Include="RenderTarget.h" />
     <ClInclude Include="ScriptParser.h" />
     <ClInclude Include="SpotLight.h" />
     <ClInclude Include="TextEditor.h" />

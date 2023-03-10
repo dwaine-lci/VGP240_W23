@@ -7,7 +7,7 @@ struct Vertex
 {
 	Vector3 pos;
 	Vector3 posWorld;
-	Vector3 normal;
+	Vector3 normal = Vector3(0.0f);
 	X::Color color;
 };
 

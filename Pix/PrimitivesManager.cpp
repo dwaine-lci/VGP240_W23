@@ -104,7 +104,10 @@ bool PrimitivesManager::EndDraw()
 		{
 			mVertexBuffer[i].pos = MathHelper::TransformCoord(mVertexBuffer[i].pos, matFinal);
 			mVertexBuffer[i].posWorld = mVertexBuffer[i].pos;
-			mVertexBuffer[i].normal = MathHelper::TransformNormal(mVertexBuffer[i].normal, matFinal);
+			if (!MathHelper::CheckEqual(MathHelper::MagnitudeSquared(mVertexBuffer[i].normal), 0.0f))
+			{
+				mVertexBuffer[i].normal = MathHelper::TransformNormal(mVertexBuffer[i].normal, matFinal);
+			}
 		}
 	}
 

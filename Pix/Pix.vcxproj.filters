@@ -42,6 +42,12 @@
     <None Include="Scripts\3d_texturing_perspective.pix">
       <Filter>Scripts</Filter>
     </None>
+    <None Include="Scripts\3d_texturing_cube_post_process.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_point_light_post_process.pix">
+      <Filter>Scripts</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -214,6 +220,21 @@
       <Filter>Commands</Filter>
     </ClCompile>
     <ClCompile Include="CmdSetUseFilter.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetPostProcessingEffect.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcessing.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdBeginPostProcessingDraw.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdEndPostProcessingDraw.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
   </ItemGroup>
@@ -402,6 +423,21 @@
       <Filter>Commands</Filter>
     </ClInclude>
     <ClInclude Include="CmdSetUseFilter.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetPostProcessingEffect.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcessing.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdBeginPostProcessingDraw.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdEndPostProcessingDraw.h">
       <Filter>Commands</Filter>
     </ClInclude>
   </ItemGroup>

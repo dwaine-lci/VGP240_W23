@@ -8,6 +8,7 @@
 #include "MatrixStack.h"
 #include "PrimitivesManager.h"
 #include "Viewport.h"
+#include "PostProcessing.h"
 
 void Graphics::NewFrame()
 {
@@ -19,4 +20,5 @@ void Graphics::NewFrame()
 	MatrixStack::Get()->OnNewFrame();
 	PrimitivesManager::Get()->OnNewFrame();
 	Viewport::Get()->OnNewFrame();
+	PostProcessing::Get()->OnNewFrame();
 }
