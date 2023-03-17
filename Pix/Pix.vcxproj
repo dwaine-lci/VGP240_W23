@@ -162,6 +162,7 @@
     <None Include="Scripts\drawLine.pix" />
     <None Include="Scripts\drawPoints.pix" />
     <None Include="Scripts\drawTriangles.pix" />
+    <None Include="Scripts\raytracing_basic.pix" />
     <None Include="Scripts\test.pix" />
     <None Include="xconfig.json" />
   </ItemGroup>
@@ -183,6 +184,7 @@
     <ClCompile Include="CmdPushRotationZ.cpp" />
     <ClCompile Include="CmdPushScaling.cpp" />
     <ClCompile Include="CmdPushTranslation.cpp" />
+    <ClCompile Include="CmdRayTracer.cpp" />
     <ClCompile Include="CmdSetAddressMode.cpp" />
     <ClCompile Include="CmdSetCameraDirection.cpp" />
     <ClCompile Include="CmdSetCameraFar.cpp" />
@@ -220,6 +222,7 @@
     <ClCompile Include="PostProcessing.cpp" />
     <ClCompile Include="PrimitivesManager.cpp" />
     <ClCompile Include="Rasterizer.cpp" />
+    <ClCompile Include="RayTracer.cpp" />
     <ClCompile Include="RenderTarget.cpp" />
     <ClCompile Include="ScriptParser.cpp" />
     <ClCompile Include="SpotLight.cpp" />
@@ -253,6 +256,7 @@
     <ClInclude Include="CmdPushRotationZ.h" />
     <ClInclude Include="CmdPushScaling.h" />
     <ClInclude Include="CmdPushTranslation.h" />
+    <ClInclude Include="CmdRayTracer.h" />
     <ClInclude Include="CmdSetAddressMode.h" />
     <ClInclude Include="CmdSetCameraDirection.h" />
     <ClInclude Include="CmdSetCameraFar.h" />
@@ -292,8 +296,11 @@
     <ClInclude Include="PostProcessing.h" />
     <ClInclude Include="PrimitivesManager.h" />
     <ClInclude Include="Rasterizer.h" />
+    <ClInclude Include="Ray.h" />
+    <ClInclude Include="RayTracer.h" />
     <ClInclude Include="RenderTarget.h" />
     <ClInclude Include="ScriptParser.h" />
+    <ClInclude Include="Sphere.h" />
     <ClInclude Include="SpotLight.h" />
     <ClInclude Include="TextEditor.h" />
     <ClInclude Include="Texture.h" />

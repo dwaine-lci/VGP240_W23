@@ -48,6 +48,9 @@
     <None Include="Scripts\3d_point_light_post_process.pix">
       <Filter>Scripts</Filter>
     </None>
+    <None Include="Scripts\raytracing_basic.pix">
+      <Filter>Scripts</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinMain.cpp" />
@@ -236,6 +239,12 @@
     </ClCompile>
     <ClCompile Include="CmdEndPostProcessingDraw.cpp">
       <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdRayTracer.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="RayTracer.cpp">
+      <Filter>Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -439,6 +448,18 @@
     </ClInclude>
     <ClInclude Include="CmdEndPostProcessingDraw.h">
       <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdRayTracer.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

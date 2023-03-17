@@ -9,6 +9,7 @@
 #include "PrimitivesManager.h"
 #include "Viewport.h"
 #include "PostProcessing.h"
+#include "RayTracer.h"
 
 void Graphics::NewFrame()
 {
@@ -21,4 +22,5 @@ void Graphics::NewFrame()
 	PrimitivesManager::Get()->OnNewFrame();
 	Viewport::Get()->OnNewFrame();
 	PostProcessing::Get()->OnNewFrame();
+	RayTracer::Get()->OnNewFrame();
 }

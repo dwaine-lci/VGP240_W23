@@ -36,6 +36,7 @@
 #include "CmdSetPostProcessingEffect.h"
 #include "CmdBeginPostProcessingDraw.h"
 #include "CmdEndPostProcessingDraw.h"
+#include "CmdRayTracer.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -103,6 +104,12 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetCullMode>();
 	RegisterCommand<CmdSetCorrectUV>();
 	RegisterCommand<CmdModel>();
+
+	// Ray Tracing commands
+	RegisterCommand<CmdBeginRayTracing>();
+	RegisterCommand<CmdEndRayTracing>();
+	RegisterCommand<CmdRTSphere>();
+	RegisterCommand<CmdRTLight>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()
